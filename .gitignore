@@ -4,6 +4,8 @@
 .hgsvn
 *.komodoproject
 .hg
+*.sublime-*
+*.wpr
 
 #build and log files
 ###############################
