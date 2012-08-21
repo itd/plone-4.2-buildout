@@ -6,6 +6,7 @@
 .hg
 *.sublime-*
 *.wpr
+.idea
 
 #build and log files
 ###############################
