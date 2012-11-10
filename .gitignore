@@ -1,12 +1,30 @@
+###########################################################
+### Uber-generic .gitignore file. Edit to taste.
+###########################################################
+
+
+### Stuff local to this repo
+#
+
+# editor and revision mgt stuff
 ###############################
 .svn
 .bzr
 .hgsvn
 *.komodoproject
 .hg
-*.sublime-*
-*.wpr
+.wpr
+.sublime*
 .idea
+.tmproj
+*.esproj
+nbproject
+*.sublime-project
+*.sublime-workspace
+*.komodoproject
+.komodotools
+
+
 
 #build and log files
 ###############################
@@ -16,17 +34,31 @@
 *.out
 *.log
 *.tmp
+*.tmp*
+*.mo
+*.egg
+*.EGG
+*.EGG-INFO
+build
+downloads
+dist
 
 #Apple / Mac stuff
 ###############################
 .DS_Store
 ._*
 .Trash
+*.app
+.DS_Store
+._*
+Thumbs.db
+.cache
+.project
+.settings
 
 #crazy files
 ###############################
 META
-build/
 tmp/
 junk
 trash
@@ -55,6 +87,8 @@ trash
 ###############################
 *.db
 Data.f*
+*.sqlite
+
 
 # plone/zope stuff
 #########################
@@ -65,27 +99,26 @@ var/*
 eggs
 parts/*
 opt
-src
-bin
 *egg-info
 WingDBG
 .installed.cfg
 adminPassword.txt
 picked-versions.cfg
-*.mo
-*.egg
-*.EGG
-*.EGG-INFO
-build
-downloads
-dist
 .mr.developer.cfg
-.hg
-.bzr
-.svn
-*.pyc
-*.pyo
-*.tmp*
+bin/*
+
+
+# Numerous always-ignore extensions
+*.diff
+*.err
+*.orig
+*.log
+*.rej
+*.swo
+*.swp
+*.vi
+*~
+*.sass-cache
 
 
 
