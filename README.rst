@@ -31,7 +31,8 @@ Setup your virtual environment and get the buildout
   git clone https://github.com/itd/plone-4.2-buildout.git *PROJECT*-buildout
 
 
-Then, run the buildout::
+Change the name of the **site-id** assignment variable in buildout.cfg
+(it is currently set to *tool*), then run the buildout::
 
   ./bin/buildout -c develop.cfg
 
@@ -57,6 +58,8 @@ alias plb=./bin/buildout -c develop.cfg
 
 There's also a bash shell script that does some checks.
 You can ask me for it if you want.
+
+**Change the *admin* password!**
 
 
 Staging and user acceptance
