@@ -11,8 +11,8 @@ System environment
 ===================
 These are things I install on my Ubuntu development system::
 
-  apt-get install build-essential libxslt1-dev wget \\
-  libxml2-dev libxml2-utils zlib1g-dev libjpeg-dev libfreetype6-dev \\
+  apt-get install build-essential libxslt1-dev wget \
+  libxml2-dev libxml2-utils zlib1g-dev libjpeg-dev libfreetype6-dev \
   poppler-utils wv python2.7-dev python-distribute
 
 
