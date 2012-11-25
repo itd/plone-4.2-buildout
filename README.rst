@@ -11,8 +11,8 @@ System environment
 ===================
 These are things I install on my Ubuntu development system::
 
-apt-get install build-essential libxslt1-dev wget \
-  libxml2-dev libxml2-utils zlib1g-dev libjpeg-dev libfreetype6-dev \
+apt-get install build-essential libxslt1-dev wget \\
+  libxml2-dev libxml2-utils zlib1g-dev libjpeg-dev libfreetype6-dev \\
   poppler-utils wv python2.7-dev python-distribute
 
 
@@ -37,15 +37,17 @@ Change the name of the **site-id** assignment variable in buildout.cfg
   ./bin/buildout -c develop.cfg
 
 
-What the heck? ./bin/buildout doesn't work!
---------------------------------------------
+What the heck? Running "./bin/buildout" doesn't work!
+--------------------------------------------------------
 I run my builds as either develop.cfg or production.cfg
 so there's no guessing. We're all smart. Deal with it.
 
-On my dev boxes, I do a:
+On my dev boxes, I do a::
+
   ./bin/buildout -c develop.cfg
 
-On production, I do:
+On production, I do::
+
   ./bin/buildout -c production.cfg
 
 If you have several development environments, just
@@ -66,8 +68,6 @@ Staging and user acceptance
 ------------------------------------
 If you have, say, staging and user acceptance
 environments, cp production.cfg and tweak to
-your hearts content, and just
+your hearts content. Then, just
   ./bin/buildout -c yourthing.cfg
-for whatever yourthing happens to be.
-
-
+for whatever your thing happens to be.
