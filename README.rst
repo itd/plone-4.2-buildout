@@ -3,9 +3,38 @@ Plone 4.2 site buildout
 A basic Plone 4.2 buildout. I'll update this
 when I can to keep up with the latest releases of 4.2.
 
-All the standard Plone stuff applies.
-Make sure you have all the libs you need,
+All the standard Plone stuff applies. I/m building against Python 2.7.x.
+Make sure you have all the system environment stuff you need,
 and run this from a virtualenv.
+
+System environment
+===================
+These are things I install on my Ubuntu development system::
+
+apt-get install build-essential libxslt1-dev wget \
+  libxml2-dev libxml2-utils zlib1g-dev libjpeg-dev libfreetype6-dev \
+  poppler-utils wv python2.7-dev python-distribute
+
+
+Install the latest virtualenv::
+
+  sudo pip install virtualenv
+
+
+Setup your virtual environment and get the buildout
+(substitute your project's name for *PROJECT*)::
+
+  cd /install/dir/
+  virtualenv venv-*PROJECT*
+  source venv-*PROJECT*/bin/activate
+  mkdir buildout-cache
+  git clone https://github.com/itd/plone-4.2-buildout.git *PROJECT*-buildout
+
+
+Then, run the buildout::
+
+  ./bin/buildout -c develop.cfg
+
 
 What the heck? ./bin/buildout doesn't work!
 --------------------------------------------
