@@ -27,7 +27,7 @@ Setup your virtual environment and get the buildout
   cd /install/dir/
   virtualenv venv-*PROJECT*
   source venv-*PROJECT*/bin/activate
-  mkdir buildout-cache
+  mkdir ./buildout-cache/{eggs,downloads}
   git clone https://github.com/itd/plone-4.2-buildout.git *PROJECT*-buildout
 
 
@@ -69,5 +69,7 @@ Staging and user acceptance
 If you have, say, staging and user acceptance
 environments, cp production.cfg and tweak to
 your hearts content. Then, just
+
   ./bin/buildout -c yourthing.cfg
+
 for whatever your thing happens to be.
