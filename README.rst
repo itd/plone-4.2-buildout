@@ -27,7 +27,7 @@ Setup your virtual environment and get the buildout
   cd /install/dir/
   virtualenv venv-*PROJECT*
   source venv-*PROJECT*/bin/activate
-  mkdir ./buildout-cache/{eggs,downloads}
+  mkdir -p ../buildout-cache/{eggs,downloads}
   git clone https://github.com/itd/plone-4.2-buildout.git *PROJECT*-buildout
 
 
